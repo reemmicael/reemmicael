@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Now </title>
+</head>
+<style>
+
+    h1{
+        text-align: center;
+        font-size: 55px;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 2px 2px  7px #111111;
+        color:rgb(72, 213, 24);
+        box-shadow: 31px -45px 16px 12px rgba(23, 64, 62, 0.2); 
+        
+        
+    }
+
+    li{
+        display: inline;
+        margin-right: 0px 3px;
+        padding: 5px;
+        
+        
+        
+    }
+    ul{
+        width: 570px;
+        padding: 15px;
+        margin: 0px auto 0px auto;
+        border-top: 3px solid #000;
+        border-bottom: 1px solid #000;
+         text-align: center;
+    }
+    a {
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 6px 18px 5px 18px;
+       
+    }
+
+    a:hover, a.on{
+        color:#ffd3b6;
+        background-color:darkcyan;
+    }
+  
+    
+        
+        
+    
+
+    body{
+        
+         background-repeat: no - repeat-x;
+         background-attachment: fixed;
+         background:radial-gradient(circle at -0.2% 48.9%, rgb(32, 233, 104) 0%, rgb(13, 167, 236) 99.8%);
+    }
+
+    img{
+        filter: saturate(350%);
+        margin:auto;
+        display: block;
+        
+        
+        
+    }
+
+    blockquote{
+        background-color:darkcyan;
+        float: center;
+        font-size: 85%;
+        font-family:'Times New Roman', Times, serif;
+        font-style: normal;
+        margin:10px 15px 15px 10px;
+        padding: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        color: palegreen;
+        
+        
+
+    }
+    h2{
+        text-align: center;
+        font-size: 25px;
+
+    }
+    h3{
+        text-align: center;
+        border:none;
+    }
+
+    button{
+        display: block;
+        margin: 25px auto;
+        background-color: darkcyan;
+        color:greenyellow;
+        font-size: 15px;
+        transition: all 200ms ease-in-out;
+        padding: 16px;
+        border-radius: 29px;
+        box-shadow: 5px 5px 10px green; 
+        border: none;
+        font-family:cursive ;
+
+        
+ }
+    button:hover{
+        cursor: pointer;
+        
+    }
+    
+    
+</style>
+<body>
+    <div id="Header">
+    
+    <h1>
+        <em> Volunteer Abroad </em>
+        
+    </h1>
+</div>
+    <ul id="navigation">
+        <li><a href="https://www.volunteerhq.org/blog/cheap-volunteer-abroad-programs/ "> <strong>Programs Abroad</strong> </a></li><br>
+        <li><a href="https://www.projects-abroad.org/volunteer-abroad/teaching/ "> <strong>Teach Abroad</strong> </a></li><br>
+         <li><a href="https://www.youtube.com/watch?v=hl1ZMz9THjg "> <strong> Video Testimony</strong></a></li><br>
+
+    </ul>
+
+    
+       <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/725/original/123-1234351_travel-landmark-clip-art-travel-around-the-world.png?1678844532" width="450"/>
+       
+    
+</div>
+ 
+<h2>
+    <em> Discover Something New</em>
+    <blockquote>
+    It is no secret that going overseas might feel like you are entering unfamiliar territory.
+    But unfamiliar things are always exciting! While you are doing volunteer work abroad, 
+    you’ll try out new foods, which you might learn to love; and you will hear new songs, 
+    from the country you are visiting, which might become one your favourite tracks. As a volunteer,
+    you will be able to experience a whole different culture: All these cultural exchanges will teach
+    you so much about the world you live in, that you won’t regret this experience.Going overseas to 
+    support social projects is very rewarding. Not only can you help to make an impact and join an amazing cause,
+    but being a volunteer abroad is a mutually beneficial experience.
+       <br/> So, what do you say?<br/>
+        Would you give volunteering a chance? 
+    </blockquote>
+</h2>
+
+<h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8WEMlDrLD1I?start=19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <button class="signup-button">
+    <strong>Sign up Today!</strong>
+  </button>      
+</h3>
+ 
+       
+ <script>
+    function signup(){
+        let name = prompt("What is your name ?");
+        let mail = prompt("what is your email?")
+        let travel = prompt("Are you Intrested in Traveling abroad?");
+        
+        if(travel === "yes"){
+       
+            alert(
+            " Thank you " + name + "! We'll be in touch via Email!✈️ ")
+        
+        } 
+        
+        if(travel !== "yes") {
+            alert("No problem! We'll be here when you're ready " + name +"! 😊 ");
+        }
+
+    }
+
+    let signupbutton = document.querySelector(".signup-button");
+    signupbutton.addEventListener("click",signup);
+ </script> 
+</body>
+
+
+</html>
